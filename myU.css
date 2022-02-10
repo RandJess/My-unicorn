@@ -1,0 +1,167 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url("img/background.png");
+  font-family: Arial, sans-serif;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #C55394;
+}
+
+.floatright{
+  float: right;
+}
+.floatleft{
+  float: left;
+  font-family:  'Courgette', cursive;
+  font-style: italic;
+  font-size: 28px;
+  margin-left: 40px;
+}
+a.floatright{
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px; 
+  text-decoration: none;
+}
+
+a.floatright:hover {
+  background-color: #EB43A3;
+}
+
+/*la partie titre avec arc-en-ciel*/
+.grandtitre{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+img.arc-en-ciel{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  margin-left: 30%;
+}
+h1{
+  margin-left: 40%;
+  margin-top: 5%;
+  font-family:  'Courgette', cursive;
+  color : #C55394;
+  font-style: italic;
+  }
+
+/*les autres titres */
+h4{
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  color: #EB43A3;
+}
+
+/*Pour mettre l'effet shadow*/
+.card{
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 40px;
+  background-color: white;
+  width: auto;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* mettre en flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*rendre le text au dessus de l'image*/
+.flex div{
+  position: relative;
+}
+
+/*Un effet de zoom en CSS 3 s’effectue au survol de l’image*/
+.flex div:hover{
+  transform: scale(1.3);    /*1 DESIGNE QUE RIEN NE CHANGE, <1 DESIGNE UN ZOOM ARRIERE , 1< DESIGNE UN ZOOM AVANT*/
+}
+
+/*le text au milieu*/
+.flex div > p{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Background avec 0.5 opacity */
+  color: #f1f1f1; /* Gris */
+  width: 74%; 
+  padding: 20px;
+}
+
+
+
+  /* Nous touver */
+  .flex2{
+    display: flex;
+    bottom: 10%;
+  }
+  .flex2 > div{
+    margin-left: 20px;
+  }
+
+  /* Bouton */
+  .bouton{
+    background-color: #C55394; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+h6{
+  font-family: 'Courgette', cursive;
+  font-size: 15px;
+  color: #EB43A3;
+}
+/* FOOTER */
+footer{
+  background-color: #E577B5;
+  padding: 5px;
+  margin-top: 40px;
+}
+#dev{
+  color: #FFF;
+  font-size: 80%;
+  margin-left: 90%;
+}
+
+/* RESPONSIVE */
+/* 1600px ou smaller */
+@media only screen and (max-width: 1600px){
+  .flex div img{
+    width: 220px;
+    height: auto;
+  }
+  .flex div > p{
+    width: 180px;
+    height: auto;
+    margin-bottom: 15%;
+  }
+  
+}
